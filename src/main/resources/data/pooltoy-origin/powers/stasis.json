@@ -80,6 +80,19 @@
     "type": "origins:prevent_sleep"
   },
 
+  "eggolib_keys": {
+    "type": "origins:prevent_key_use",
+    "keys": [
+      "key.forward",
+      "key.back",
+      "key.left",
+      "key.right",
+      "key.sneak",
+      "key.sprint",
+      "key.jump"
+    ]
+  },
+
   "auto_disable_on_death": {
     "type": "origins:active_self",
     "entity_action": {
