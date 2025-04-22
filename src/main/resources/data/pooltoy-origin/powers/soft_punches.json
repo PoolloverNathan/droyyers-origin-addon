@@ -1,0 +1,28 @@
+{
+  "name": "Soft Punches",
+  "description": "Your malleability has a rather large downside — you cannot attack or mine without a tool.",
+  "type": "origins:multiple",
+  "no_attack": {
+    "type": "origins:modify_damage_dealt",
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:empty",
+        "inverted": true
+      }
+    }
+  },
+  "no_mine": {
+    "type": "origins:modify_break_speed",
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:harvest_level",
+        "comparison": ">=",
+        "compare_to": 1
+      }
+    }
+  }
+}
